@@ -1,0 +1,3 @@
+[submodule "tarot"]
+	path = tarot
+	url = https://github.com/Searge/tarot/

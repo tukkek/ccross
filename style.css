@@ -1,0 +1,37 @@
+body{
+  background-image:url('background.webp');
+  background-size:cover;
+}
+#table{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+}
+#cross{
+  flex:70%;
+  display:grid;
+  grid-template:33% 33% 33% / 33% 33% 33%
+}
+#side{
+  flex:33%;
+  display:flex;
+  flex-direction:column;
+}
+#side>div{
+  flex:25%;
+}
+.slot{
+  background-image:url('back.jpg');
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  cursor:pointer;
+}
+#cross #left{background-position:right;}
+#cross #right{background-position:left;}
+#help{
+  position:fixed;
+  top:0;
+  right:0;
+}
