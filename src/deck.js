@@ -17,12 +17,12 @@ function randomize(array){
 }
 
 export async function shuffle(){
-  let index=await fetch('../tarot/index.xml')
+  let index=await fetch('./tarot/index.xml')
   index=await index.text()
   index=new DOMParser().parseFromString(index,'text/xml')
   cards.push(...index.querySelectorAll('card'))
   randomize(cards)
-  let descriptions=await fetch('../tarot/PictorialKey.xml')
+  let descriptions=await fetch('./tarot/PictorialKey.xml')
   descriptions=await descriptions.text()
   descriptions=new DOMParser().parseFromString(descriptions,'text/xml')
   descriptions=Array.from(descriptions.querySelectorAll('card'))
