@@ -7,7 +7,12 @@ const HELP=`
 
 var slots=['top','left','center','right','bottom']
 
-function turn(slot,event){slot.style['background-image']=`url("images/${deck.cards.pop()}")`}
+function turn(slot){
+  let c=deck.cards.pop()
+  slot.style['background-image']=`url("images/${c}")`
+  let name=c.slice(c.indexOf(' ')+1,c.indexOf('.'))
+  slot.title=name[0].toUpperCase()+name.slice(1)
+}
 
 export function draw(){
   deck.shuffle()

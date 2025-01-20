@@ -1,5 +1,5 @@
 body{
-  background-image:url('background.webp');
+  background-image:url('images/table.jpg');
   background-size:cover;
 }
 #table{
@@ -38,6 +38,6 @@ body{
   right:0;
 }
 #cross div,#side div{
-  width:30vh;
-  height:30vh;
+  width:20vh;
+  height:20vh;
 }
